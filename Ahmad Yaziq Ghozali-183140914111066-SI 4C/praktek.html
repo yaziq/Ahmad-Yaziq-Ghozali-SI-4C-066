@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+  
+<style>
+.main{
+    background-image: url(ubb.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 50px 0px 50px 0px;
+}
+
+
+.container{
+width : 800px;
+height: 1000px;
+background-color:whitesmoke;
+border: 3px solid black ;
+margin: 50px auto;
+position: relative;
+
+}
+
+.judul{
+border: 1px black solid;
+width : 800px;
+height: 100px;
+box-sizing: border-box;
+padding-left: 20px;
+padding-top: 10px;
+}
+
+.menu{
+    border: 1px black solid;
+    width : 800px;
+    height: 50px;
+
+}
+
+.banner{
+    border: 1px black solid;
+    width : 800px;
+height: 100px;
+
+}
+
+.logo{
+    background-image: url(twitterr.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-size: cover;
+}
+
+.konten{
+    border: 1px black solid;
+    width : 800px;
+    height: 500px;
+    margin: auto;
+    border: black;
+    border-style: solid;
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+
+.konten img{
+    float: left;
+    padding-right: 30px;
+}
+
+
+.gambar1{
+background-image: url(ub1.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 225px;
+margin-top: 10px;
+}
+
+.gambar2{
+background-image: url(ub2.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.gambar3{
+background-image: url(ub3.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.gambar4{
+background-image: url(ub4.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.mode{
+border: 1px black solid;
+width : 200px;
+height: 150px;
+left: 1100px;
+top: 10px;
+background-color: blue ;
+position: relative;
+position: fixed;
+border-radius: 10px;
+background-size: cover;
+}
+
+.malam{
+border: 1px white solid;
+width : 150px;
+height: 50px;
+right: 25px;
+top: 10px;
+background-color: yellow ;
+position: absolute;
+}
+.siang{
+border: 1px white solid;
+width : 150px;
+height: 50px;
+right: 25px;
+top: 70px;
+background-color: yellow ;
+position: absolute;
+text-align: center;
+}
+
+.kotak{
+border: 1px white solid;
+width : 100px;
+height: 100px;
+bottom: 10px;
+left: 20px;
+background-color: greenyellow ;
+position: fixed;
+}
+
+.cobaevent{
+border: 1px white solid;
+width : 100px;
+height: 100px;
+left: 20px;
+background-color:yellow ;
+bottom: 10px;
+position: fixed;
+}
+
+.footer{
+border: 1px black solid;
+width : 800px;
+height: 100px;    
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    <script>
+        function ubahwarna_dark(){
+            document.getElementById('konten').style.backgroundColor="black";
+            document.getElementById('konten').style.color="white";
+            document.getElementById('konten').style.border="5px solid grey"
+        }
+
+        function ubahwarna_light(){
+            document.getElementById('konten').style.backgroundColor="pink";
+            document.getElementById('konten').style.color="black";
+        }
+
+        function divkelakuan(){
+            document.getElementById('cobaeventku').className="cobaevent";
+        }
+
+        function divkelakuan1(){
+            document.getElementById('cobaeventku').className="kotak";
+        }
+
+    </script>
+
+<div class="mode">
+
+<center>
+    <button type="button" onclick="ubahwarna_dark()" class="malam">
+        <p>Mode Malam Hari</p>
+    </button>
+
+    <button type="button" onclick="ubahwarna_light()" class="siang">
+        <p> Mode Siang Hari</p>
+    </button>
+</center>
+    
+</div>
+
+<div class="main">
+
+<div class="container">
+
+
+<div class="logo">
+    
+</div>
+<div class="judul">
+    <h1>Website UB</h1>
+      
+</div>
+
+<div class="menu">
+Dapatkan Informasi Penting Hanya Di Website UB
+</div>
+
+<div class="banner">
+    Universitas Brawijaya (UB) adalah perguruan tinggi di Indonesia yang berdiri pada tahun 1963 di Kota Malang, Jawa Timur melalui Ketetapan Menteri Pendidikan dan Ilmu Pengetahuan no.1 tanggal 5 Januari 1963. Tanggal tersebut kemudian ditetapkan sebagai Dies Natalis UB. Nama Brawijaya diberikan khusus oleh Presiden Soekarno dengan harapan mampu gemilang seperti Raden Wijaya (Brawijaya I) selaku pendiri Kerajaan Majapahit sekaligus menjadi kampus kebanggan bangsa Indonesia.[3]
+
+</div>
+
+<div class="judulartikel">
+
+</div>
+
+<div class="konten" id="konten">
+    <img src="ub.jpg">
+    <P>Lambang UB berbentuk segilima dengan warna dasar hitam, di dalamnya terdapat gambar Raden Wijaya (Prabu Brawijaya) berwarna kuning emas, sebagai penjelmaan Dewa Wisnu yang bertangan empat dengan memegang lampu, sangkhala, gada, dan cakra, mengenakan mahkota Candra Kapala, di samping kiri dan kanan sepasang Dewa Perwara sebagai pengikut Sang Raja, dengan warna dasar biru dan bersinar dari pusat. Makna lambang UB adalah sebagai berikut :
+
+        Segi Lima, bermakna menjunjung tinggi Pancasila sebagai falsafah dan pandangan hidup bangsa Indonesia.
+        Warna Kuning Emas, bermakna jiwa kepeloporan seperti dimiliki oleh Raden Wijaya.
+        Dasar Hitam, bermakna keabadian.
+
+        Mahkota Candra Kapala, bermakna berani membongkar segala sesuatu yang dianggap kurang wajar atau kurang benar.
+        Gada, bermakna penegak tertib hukum.
+
+        Cakra, bermakna berani meratakan segala sesuatu yang kurang wajar atau kurang benar.
+        
+        Sangkhala, bermakna segala sesuatu dilakukan dengan kesucian yang disertai dengan tugas pemeliharaan atau pembinaan sesuai dengan sifat Wisnu.
+        Lampu, bermakna percaya dan meyakini benar bahwa Zat itu ada.</P>
+        <P>Lambang UB berbentuk segilima dengan warna dasar hitam, di dalamnya terdapat gambar Raden Wijaya (Prabu Brawijaya) berwarna kuning emas, sebagai penjelmaan Dewa Wisnu yang bertangan empat dengan memegang lampu, sangkhala, gada, dan cakra, mengenakan mahkota Candra Kapala, di samping kiri dan kanan sepasang Dewa Perwara sebagai pengikut Sang Raja, dengan warna dasar biru dan bersinar dari pusat. Makna lambang UB adalah sebagai berikut :
+
+            Segi Lima, bermakna menjunjung tinggi Pancasila sebagai falsafah dan pandangan hidup bangsa Indonesia.
+            Warna Kuning Emas, bermakna jiwa kepeloporan seperti dimiliki oleh Raden Wijaya.
+            Dasar Hitam, bermakna keabadian.
+            Mahkota Candra Kapala, bermakna berani membongkar segala sesuatu yang dianggap kurang wajar atau kurang benar.
+            Gada, bermakna penegak tertib hukum.
+            Cakra, bermakna berani meratakan segala sesuatu yang kurang wajar atau kurang benar.
+            Sangkhala, bermakna segala sesuatu dilakukan dengan kesucian yang disertai dengan tugas pemeliharaan atau pembinaan sesuai dengan sifat Wisnu.
+            Lampu, bermakna percaya dan meyakini benar bahwa Zat itu ada.</P>
+            <P>Lambang UB berbentuk segilima dengan warna dasar hitam, di dalamnya terdapat gambar Raden Wijaya (Prabu Brawijaya) berwarna kuning emas, sebagai penjelmaan Dewa Wisnu yang bertangan empat dengan memegang lampu, sangkhala, gada, dan cakra, mengenakan mahkota Candra Kapala, di samping kiri dan kanan sepasang Dewa Perwara sebagai pengikut Sang Raja, dengan warna dasar biru dan bersinar dari pusat. Makna lambang UB adalah sebagai berikut :
+
+                Segi Lima, bermakna menjunjung tinggi Pancasila sebagai falsafah dan pandangan hidup bangsa Indonesia.
+                Warna Kuning Emas, bermakna jiwa kepeloporan seperti dimiliki oleh Raden Wijaya.
+                Dasar Hitam, bermakna keabadian.
+                Mahkota Candra Kapala, bermakna berani membongkar segala sesuatu yang dianggap kurang wajar atau kurang benar.
+                Gada, bermakna penegak tertib hukum.
+                Cakra, bermakna berani meratakan segala sesuatu yang kurang wajar atau kurang benar.
+                Sangkhala, bermakna segala sesuatu dilakukan dengan kesucian yang disertai dengan tugas pemeliharaan atau pembinaan sesuai dengan sifat Wisnu.
+                Lampu, bermakna percaya dan meyakini benar bahwa Zat itu ada.</P>
+
+</div>
+
+<div class="footer">
+
+    <div class="gambar1" onclick="gambar1()">
+
+    </div>
+
+    <div class="gambar2" onclick="gambar2()">
+
+    </div>
+
+    <div class="gambar3" onclick="gambar3()">
+
+    </div>
+
+    <div class="gambar4" onclick="gambar4()">
+
+    </div>
+
+</div>
+
+
+
+</div>  
+
+<div class="kotak"  id="cobaeventku" onmouseup="divkelakuan()" onmousedown="divkelakuan1()">
+    
+</div>
+
+</div>
+
+
+</body>
+
+
+
+</html>

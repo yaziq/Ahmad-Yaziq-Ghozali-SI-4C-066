@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.container{
+width : 400px;
+height: 400px;
+background-color:whitesmoke;
+border: 3px solid black ;
+margin: 50px auto;
+position: relative;
+
+}
+
+.gambar{
+border: 1px black solid;
+width : 400px;
+height: 300px;
+background-color: yellow;
+background-repeat: no-repeat;
+}
+
+.tombol{
+border: 1px black solid;
+width : 400px;
+height: 100px;
+}
+
+.gambar1{
+background-image: url(g1.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.gambar2{
+background-image: url(g2.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.gambar3{
+background-image: url(g3.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.gambar4{
+background-image: url(g4.jpg);
+border: 1px black solid;
+width : 80px;
+height: 80px;
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+    </style>
+
+    <script>
+        function gambar1(){
+            document.getElementById('hasilgambar').style.backgroundImage="url(g1.jpg)";
+        }
+
+        function gambar2(){
+            document.getElementById('hasilgambar').style.backgroundImage="url(g2.jpg)";
+        }
+
+        function gambar3(){
+            document.getElementById('hasilgambar').style.backgroundImage="url(g3.jpg)";
+        }
+
+        function gambar4(){
+            document.getElementById('hasilgambar').style.backgroundImage="url(g4.jpg)";
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="gambar" id="hasilgambar">
+
+        </div>
+
+        <div class="tombol">
+
+            <div class="gambar1" onclick="gambar1()">
+
+            </div>
+
+            <div class="gambar2" onclick="gambar2()">
+
+            </div>
+
+            <div class="gambar3" onclick="gambar3()">
+
+            </div>
+
+            <div class="gambar4" onclick="gambar4()">
+
+            </div>
+    
+        </div>
+       
+
+
+
+    </div>
+    
+</body>
+</html>

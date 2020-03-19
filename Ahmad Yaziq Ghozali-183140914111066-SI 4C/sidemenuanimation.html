@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.sidepanel{
+    width: 200px;
+    height: 100%;
+    background-color: yellow;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: width 1s;
+   
+}
+
+.main{
+    margin-left: 0px;
+}
+
+.sidepanelclose{
+    width: 0px;
+    height: 100%;
+    background-color: yellow;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    transition: width 1s;
+}
+
+.mainopen{
+    margin-left: 200px;
+}
+
+
+</style>
+
+<script>
+
+function openNav(){
+            document.getElementById('panelkiri').className="sidepanel";
+            document.getElementById('panelutama').className="mainopen";
+        }
+
+function closeNav(){
+    document.getElementById('panelkiri').className="sidepanelclose";
+    document.getElementById('panelutama').className="main";
+}
+</script>
+
+</head>
+<body>
+    <div class="sidepanelclose" id="panelkiri">
+        <span style="font-size: 30px;cursor: pointer;" onclick="closeNav()">x</span>
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Contact</li>
+
+    </div>
+
+    <div class="main" id="panelutama">
+        <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">&#9776</span>
+        <h1>Ini Konten</h1>
+
+    </div>
+
+    
+</body>
+</html>
